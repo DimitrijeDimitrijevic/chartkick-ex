@@ -17,7 +17,7 @@ defmodule Chartkick.Mixfile do
   #
   # Type `mix help compile.app` for more information
   def application do
-    [applications: [:logger]]
+    [extra_applications: [:logger, :eex]]
   end
 
   defp description do
@@ -47,6 +47,6 @@ defmodule Chartkick.Mixfile do
   # Type `mix help deps` for more examples and options
   defp deps do
     [{ :elixir_uuid, "~> 1.2" },
-     {:poison, "~> 3.0"}]
+     {:poison, "~> 5.0"}]
   end
 end
